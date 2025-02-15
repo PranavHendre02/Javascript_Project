@@ -38,7 +38,7 @@ Installation & Usage
 
 Download or Clone the Repository:
 
-git clone https://github.com/PranavHendre02/Javascript-Projects.git
+git clone https://github.com/PranavHendre02/Javascript_Project.git
 
 Open the Project:
 
