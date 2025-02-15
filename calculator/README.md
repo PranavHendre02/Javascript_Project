@@ -1,5 +1,6 @@
 # Javascript-Projects
 Calculator Web App
+![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/e273be9451ecc8fc154b12909c75096f11e718df/calculator/Calculator.png)
 
 Description
 
