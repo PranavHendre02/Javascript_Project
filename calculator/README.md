@@ -51,9 +51,13 @@ Use the buttons to perform calculations.
 File Structure
 
 calculator-app/
+
 │── index.html      # Main HTML file
+
 │── style.css       # CSS styles for UI
+
 │── script.js       # JavaScript for calculator logic
+
 │── README.md       # Project documentation
 
 
