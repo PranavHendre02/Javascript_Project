@@ -68,5 +68,7 @@ This project is a visually appealing **Digital & Analog Clock** that displays th
 
 ---
 ✅ **A beautifully designed, real-time clock with an interactive digital & analog display!** Let me know if you have any suggestions or improvements!
+## 👨‍💻 Author
+Developed by **Pranav Hendre**. Feel free to connect and share feedback!
 
 
