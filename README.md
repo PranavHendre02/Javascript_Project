@@ -1,6 +1,8 @@
 
 # JavaScript Projects 
 
+🔗 Live Demo: View Projects Here
+
 ## 📌 Overview
 
 This repository contains **beginner-friendly JavaScript projects** designed to help you **learn and practice core JavaScript concepts**. Each project is built with **HTML, CSS, and JavaScript**, focusing on real-world applications.
