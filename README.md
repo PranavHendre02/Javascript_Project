@@ -1,5 +1,4 @@
-
-# JavaScript Projects 
+# JavaScript Projects
 
 🔗 Live Demo: https://pranavhendre02.github.io/Javascript_Project/
 
@@ -28,13 +27,41 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 - Demonstrates **fetch() API**, JSON handling, and asynchronous JavaScript.
 - Interactive UI for seamless user experience.
 
+### 📱 **QR Code Generator**
+- Users can enter any **text or URL**, and the QR code is generated dynamically.
+- Uses the **QRCode() method** from **QRCode.js**.
+- **Highest error correction level** (H - 30%) ensures accuracy even with distortions.
+- **Blurry Glass UI** with a **linear gradient background**.
+- **Fully responsive design** with **auto-resizing QR codes**.
+
 ---
 
 ## 🛠️ Technologies Used
 
 - **HTML5** - Page structure and elements.
-- **CSS3** - Styling, layout, and UI effects.
+- **CSS3** - Styling, layout, UI effects, filters, and responsive design.
 - **JavaScript (ES6)** - Core logic, event handling, and API interactions.
+- **QRCode.js** - External JavaScript library for generating QR codes.
+
+---
+
+## 📌 How It Works
+
+### For QR Code Generator:
+1. **Enter the text or URL** in the input field.
+2. Click on the **"Generate QR Code"** button.
+3. The QR code appears instantly inside the display window.
+4. Resize the window, and the QR code automatically adjusts its size.
+
+---
+
+## 📦 External Source
+
+This project utilizes **QRCode.js**, an external library for QR code generation. The script is included as:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+```
 
 ---
 
