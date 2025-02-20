@@ -1,5 +1,6 @@
 # QR Code Generator
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/e1fe40cf42f6b920f47b5ec403281e2abc821825/QR%20code%20genrator/QRCode%20Generator.png)
+🔗 Live Demo: https://pranavhendre02.github.io/Javascript_Project/QR%20code%20genrator/index.html
 ## 🚀 Overview
 This **QR Code Generator** is a simple and stylish web-based application that allows users to generate QR codes dynamically. It is built using **HTML, CSS, and JavaScript** and utilizes the **QRCode.js** library to generate QR codes instantly. The project is fully responsive and features an elegant UI with a **blurred glass effect** and **linear gradient background** for a modern look.
 
