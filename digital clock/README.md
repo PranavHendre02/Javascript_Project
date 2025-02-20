@@ -1,5 +1,6 @@
 # Digital & Analog Clock Project
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/d4eca3b4bd776345ce01d54f35f6fb1e34378407/digital%20clock/Digital%20clock.png)
+🔗 Live Demo:https://pranavhendre02.github.io/Javascript_Project/digital%20clock/
 
 ## 📌 Overview
 This project is a visually appealing **Digital & Analog Clock** that displays the current time in both formats. The clock features:

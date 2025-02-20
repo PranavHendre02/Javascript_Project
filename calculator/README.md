@@ -1,6 +1,7 @@
 # 📱 Calculator Web App
 
 ![Calculator Preview](https://github.com/PranavHendre02/Javascript_Project/blob/e273be9451ecc8fc154b12909c75096f11e718df/calculator/Calculator.png)
+🔗 Live Demo:https://pranavhendre02.github.io/Javascript_Project/calculator/index.html
 
 ## 📌 Description
 This is a **modern and interactive calculator web application** built using **HTML, CSS, and JavaScript**. It provides basic arithmetic operations, trigonometric functions, and a square root calculation. The design features a **sleek 3D effect** and is **fully responsive**, ensuring seamless usability across **mobile, tablet, and desktop devices**.
