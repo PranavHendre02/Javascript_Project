@@ -96,7 +96,10 @@ button:hover {
 
 @media (max-width:600px) {
     .container {
-        height: auto;
+        /* height: auto; */
+        height: 95vmin; /* Increase height on mobile */
+        width: 85vmin;  /* Make it slightly wider */
+        padding: 1rem;
     }
 
     .container p {
