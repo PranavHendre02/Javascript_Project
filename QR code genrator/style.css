@@ -11,8 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #7ec8e5; */
-    background: linear-gradient(to right, rgb(69, 58, 193), rgb(56, 133, 234), #72c2e2);
+    /* background: linear-gradient(to right, rgb(69, 58, 193), rgb(56, 133, 234), #72c2e2); */
 }
 
 .container {
