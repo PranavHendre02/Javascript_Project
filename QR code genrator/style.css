@@ -96,7 +96,7 @@ button:hover {
 
 @media (max-width:600px) {
     .container {
-        height: 100vmin;
+        height: auto;
     }
 
     .container p {
