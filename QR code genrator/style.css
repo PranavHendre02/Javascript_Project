@@ -107,11 +107,15 @@ button:hover {
     }
 
     .container input {
-        font-size: .7rem;
+        font-size: 2.5vmin;
+        display: flex;
+        justify-content: center;
     }
 
     .container button {
-        font-size: .8rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2.7vmin;
     }
 
     .window {
