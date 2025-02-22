@@ -16,7 +16,7 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 - A stylish **analog + digital clock** that updates in real-time.
 - Uses **JavaScript's Date object** to display accurate time.
 - Features a glowing **3D effect UI**.
-
+---
 ### 🔢 **Calculator**
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/4711eb90aab60d7eb4c7775326940c46a16cef5f/calculator/Calculator.png)
 🔗 Live Demo:https://pranavhendre02.github.io/Javascript_Project/calculator/index.html
@@ -25,7 +25,7 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
   - **Trigonometric functions**: sin, cos, tan
   - **Square root calculation** using `Math.sqrt()`
 - Stylish **3D button effects** for an enhanced user experience.
-  
+--- 
 ### 📱 **QR Code Generator**
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/4711eb90aab60d7eb4c7775326940c46a16cef5f/QR%20code%20genrator/QRCode%20Generator.png)
 🔗 Live Demo:https://pranavhendre02.github.io/Javascript_Project/QR%20code%20genrator/index.html
@@ -34,7 +34,7 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 - **Highest error correction level** (H - 30%) ensures accuracy even with distortions.
 - **Blurry Glass UI** with a **linear gradient background**.
 - **Fully responsive design** with **auto-resizing QR codes**.
-  
+--- 
 ### 🌍 **Currency Convertor API-Based Project**
 🔗 Live Demo:https://pranavhendre02.github.io/Javascript_Project/currency%20convertor/index.html
 - Fetches and displays **dynamic data** using JavaScript APIs.
