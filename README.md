@@ -45,23 +45,6 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 
 ---
 
-## 📌 How It Works
-
-### For QR Code Generator:
-1. **Enter the text or URL** in the input field.
-2. Click on the **"Generate QR Code"** button.
-3. The QR code appears instantly inside the display window.
-4. Resize the window, and the QR code automatically adjusts its size.
-
----
-
-## 📦 External Source
-
-This project utilizes **QRCode.js**, an external library for QR code generation. The script is included as:
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-```
 
 ---
 
