@@ -37,7 +37,7 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 --- 
 ### 🎤 **Text-To-Speech Converter**
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/4b279b80366e383edba4d5c09b26465ca908b4ab/Text%20to%20Speech/Text-To-Speech.png)
-🔗 Live Demo: https://pranavhendre02.github.io/Javascript_Project/text-to-speech/
+🔗 Live Demo: https://pranavhendre02.github.io/Javascript_Project/Text%20to%20Speech/index.html
 - Converts user-entered **text into speech** using JavaScript's built-in `SpeechSynthesisUtterance` API.
 - Provides **play, pause, and stop** controls for user convenience.
 - Supports **multiple voices and languages** (depending on the browser).
