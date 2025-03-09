@@ -10,6 +10,14 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 
 ## 🚀 Projects Included
 
+### 🌍 **Currency Converter API-Based Project**
+![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/6e6bfdbfbf93d2e8a2ac2f391f2cdc2f2c56c030/currency%20convertor/Currency%20Convertor.png)
+🔗 Live Demo:[Currency Convertor]( https://pranavhendre02.github.io/Javascript_Project/currency%20convertor/index.html)
+- Fetches and displays **dynamic data** using JavaScript APIs.
+- Demonstrates **fetch() API**, JSON handling, and asynchronous JavaScript.
+- Interactive UI for seamless user experience.
+---
+
 ### ⏰ **Digital Clock**
 ![image alt](https://github.com/PranavHendre02/Javascript_Project/blob/4711eb90aab60d7eb4c7775326940c46a16cef5f/digital%20clock/Digital%20clock.png)
 🔗 Live Demo: [Digital Clock](https://pranavhendre02.github.io/Javascript_Project/digital%20clock/)
@@ -42,12 +50,6 @@ This repository contains **beginner-friendly JavaScript projects** designed to h
 - Provides **play, pause, and stop** controls for user convenience.
 - Supports **multiple voices and languages** (depending on the browser).
 - Simple and responsive UI for seamless interaction.
----
-### 🌍 **Currency Converter API-Based Project**
-🔗 Live Demo:[Currency Convertor]( https://pranavhendre02.github.io/Javascript_Project/currency%20convertor/index.html)
-- Fetches and displays **dynamic data** using JavaScript APIs.
-- Demonstrates **fetch() API**, JSON handling, and asynchronous JavaScript.
-- Interactive UI for seamless user experience.
 ---
 
 ## 🛠️ Technologies Used
