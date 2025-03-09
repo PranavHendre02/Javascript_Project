@@ -57,4 +57,4 @@ form button {
     background-color: #eae5e5;}
 @media (max-width:600px) {
     form button {font-size: 1rem;}.dropdown i{font-size: .6rem;}
-    .from{width: 4rem;}.to{width: 4rem;}}
+    .from{width: 4rem;}.to{width: 4rem;}.container{width: 60vmin;}}
