@@ -1,4 +1,5 @@
-const countryList = {
+const countryList = 
+{
     AED: "AE",
     AFN: "AF",
     XCD: "AG",
@@ -10,6 +11,7 @@ const countryList = {
     ARS: "AR",
     AUD: "AU",
     AZN: "AZ",
+
     BAM: "BA",
     BBD: "BB",
     BDT: "BD",
@@ -26,6 +28,7 @@ const countryList = {
     BWP: "BW",
     BYR: "BY",
     BZD: "BZ",
+
     CAD: "CA",
     CDF: "CD",
     XAF: "CF",
@@ -38,15 +41,18 @@ const countryList = {
     CVE: "CV",
     CYP: "CY",
     CZK: "CZ",
+
     DJF: "DJ",
     DKK: "DK",
     DOP: "DO",
     DZD: "DZ",
+
     ECS: "EC",
     EEK: "EE",
     EGP: "EG",
     ETB: "ET",
     EUR: "FR",
+
     FJD: "FJ",
     FKP: "FK",
     GBP: "GB",
@@ -58,20 +64,24 @@ const countryList = {
     GNF: "GN",
     GTQ: "GT",
     GYD: "GY",
+
     HKD: "HK",
     HNL: "HN",
     HRK: "HR",
     HTG: "HT",
     HUF: "HU",
+
     IDR: "ID",
     ILS: "IL",
     INR: "IN",
     IQD: "IQ",
     IRR: "IR",
     ISK: "IS",
+
     JMD: "JM",
     JOD: "JO",
     JPY: "JP",
+
     KES: "KE",
     KGS: "KG",
     KHR: "KH",
@@ -81,6 +91,7 @@ const countryList = {
     KWD: "KW",
     KYD: "KY",
     KZT: "KZ",
+
     LAK: "LA",
     LBP: "LB",
     LKR: "LK",
@@ -89,6 +100,7 @@ const countryList = {
     LTL: "LT",
     LVL: "LV",
     LYD: "LY",
+
     MAD: "MA",
     MDL: "MD",
     MGA: "MG",
@@ -102,6 +114,7 @@ const countryList = {
     MVR: "MV",
     MWK: "MW",
     MXN: "MX",
+
     MYR: "MY",
     MZN: "MZ",
     NAD: "NA",
@@ -110,7 +123,9 @@ const countryList = {
     NIO: "NI",
     NPR: "NP",
     NZD: "NZ",
+
     OMR: "OM",
+
     PAB: "PA",
     PEN: "PE",
     PGK: "PG",
@@ -118,11 +133,14 @@ const countryList = {
     PKR: "PK",
     PLN: "PL",
     PYG: "PY",
+
     QAR: "QA",
+
     RON: "RO",
     RSD: "RS",
     RUB: "RU",
     RWF: "RW",
+
     SAR: "SA",
     SBD: "SB",
     SCR: "SC",
@@ -137,6 +155,7 @@ const countryList = {
     SVC: "SV",
     SYP: "SY",
     SZL: "SZ",
+
     THB: "TH",
     TJS: "TJ",
     TMT: "TM",
@@ -146,110 +165,147 @@ const countryList = {
     TTD: "TT",
     TWD: "TW",
     TZS: "TZ",
+
     UAH: "UA",
     UGX: "UG",
     USD: "US",
     UYU: "UY",
     UZS: "UZ",
+
     VEF: "VE",
     VND: "VN",
     VUV: "VU",
+
     YER: "YE",
     ZAR: "ZA",
+
     ZMK: "ZM",
     ZWD: "ZW",
+
 };
+
 const base_url = " https://v6.exchangerate-api.com/v6/18cf23b9759c4a0ca771be18/latest/USD"
+
 const api_key = "18cf23b9759c4a0ca771be18"
+
 let dropdown = document.querySelectorAll(".dropdown select");
+
 let btn = document.querySelector("#get");
-let fromCurr = document.querySelector(".from select").value;
-let toCurr = document.querySelector(".to select").value;
+
 let conver = document.querySelector("#Converted");
 
-for (const select of dropdown) {
-    for (const curr in countryList) {
+for (const select of dropdown)
+{
+
+    for (const curr in countryList) 
+    {
+
         let newoption = document.createElement("option");
+
         newoption.innerHTML = curr;
         newoption.value = curr;
-        if (select.name === "from" && curr == "USD") {
+
+        if (select.name === "from" && curr == "USD") 
+        {
             newoption.selected = "selected"
-        } else if (select.name === "to" && curr === "INR") {
+        } 
+        else if (select.name === "to" && curr === "INR")
+         {
             newoption.selected = "selected"
         }
+
         select.append(newoption);
         select.addEventListener("change", (evt) => {
+
             updateflag(evt.target);
+
         });
     }
 }
-const updateflag = (element) => {
+
+const updateflag = (element) => 
+{
+
     let currcode = element.value
     console.log(currcode);
+
     let countrycode = countryList[currcode];
+
     let newsrc = `https://flagsapi.com/${countrycode}/flat/64.png`;
+
     let img = element.parentElement.querySelector("img");
+
     img.src = newsrc;
 }
-btn.addEventListener("click", async (evt) => {
+
+
+btn.addEventListener("click", async (evt) => 
+{
+
     evt.preventDefault();
+
+    let fromCurr = document.querySelector(".from select").value;
+
+    let toCurr = document.querySelector(".to select").value;
+
     let amount = document.querySelector(".amount input");
+
+    let conver=document.querySelector("#Converted");
+
     let amt = amount.value;
-    if (!amt || isNaN(amt) || amt <= 0) {
+
+    if (!amt || isNaN(amt) || amt <= 0) 
+    {
         alert("Please enter a valid amount.");
+
         return;
     }
-    fromCurr = String(fromCurr).toUpperCase();  // Ensure upper case format
-    toCurr = String(toCurr).toUpperCase();      // Ensure upper case format
 
-    // if (!isCurrencyValid(fromCurr) || !isCurrencyValid(toCurr)) {
-    //     console.error("Invalid currency code detected!");
-    //     return;
-    // }
-    const url = `${base_url}/${fromCurr}`;
-    // console.log(url);
+    fromCurr = String(fromCurr).toUpperCase();
+      // Ensure upper case format
+    toCurr = String(toCurr).toUpperCase();     
+     // Ensure upper case format
+  
+    const url = `${base_url}`;
 
-    // let response = await fetch(url);
-    // let data = await response.json();
-    // console.log('API Response:', data);  // Log the full API response
+    try {
 
-    let response = await fetch(url);
+        let response = await fetch(url);
 
-    // if (!response.ok) {
-    //     throw new Error(`HTTP ERROR:${response.status}`)
-    // }
+        if (!response.ok) 
+        {
+            throw new Error(`HTTPS status error! :${response.status}`);
+        }
 
-    let data = await response.json();
-    // console.log(data);
+        let data = await response.json();
+        console.log(data);
+        
 
+        if (!data.conversion_rates[toCurr])
+        {
+            throw new Error(`Invalid currency ${toCurr}`)
+        }
 
-    // if (!data.conversion_rates[toCurr]) {
-    //     throw new Error(`Invalid currency ${toCurr}`)
-    // }
-    let exchangerate=data.conversion_rates[toCurr]
-    console.log(exchangerate);
-    
+        let exchangerate = data.conversion_rates[toCurr];
+        
+        console.log(exchangerate);
+        console.log(amt);
 
-    // try {
+        let convertedamt=(amt*exchangerate).toFixed(2);
+        conver.style.color = "green";
 
-    //     let response = await fetch(url);
+        if (convertedamt<0) 
+        {
+            alert("Please select valid Country!")
+        }
 
-    //     if (!response.ok) {
-    //         throw new Error(`HTTP ERROR:${response.status}`)
-    //     }
+        conver.value=convertedamt;
+        
+    } 
 
-    //     let data = await response.json();
-    //     console.log(data);
+    catch (error)
+    {
+        console.error("Error occured:",error.message);
+    }
 
-
-    //     if (!data.conversion_rates[toCurr]) {
-    //         throw new Error(`Invalid currency ${toCurr}`)
-    //     }
-    //     let exchangerate=data.conversion_rates[toCurr]
-    //     let convertedamt=(amt*exchangerate).toFixed(2);
-    //     conver.value=convertedamt;
-    // } catch (error) {
-    //     console.error("Error while fetching Exchange rates:",error.message);
-    //     alert("Failed to fetch exchange rate. Please try again.")
-    // }
-})
+});
