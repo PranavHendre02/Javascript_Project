@@ -8,7 +8,7 @@ html,body{
 .container {
     display: flex;align-items: center;justify-content: center;flex-direction: column;
     height: auto;width: 49vmin;
-    padding: 2rem;
+    padding: .7rem;
     border: 3px solid rgb(5, 156, 244);border-radius: 20px;
     background: linear-gradient(to right, #0a72da, #0756a5, #024287);backdrop-filter: blur(5px);}
 h2 {text-transform: uppercase;
@@ -57,4 +57,5 @@ form button {
     background-color: #eae5e5;}
 @media (max-width:600px) {
     form button {font-size: 1rem;}.dropdown i{font-size: .6rem;}
-    .from{width: 4rem;}.to{width: 4rem;}.container{width: 60vmin;}}
+    .from{width: 4rem;}.to{width: 4rem;}.container{width: 60vmin;}.dropdown i {margin-top: .1rem;} 
+    form button {margin-top: .7rem;} p {padding: .1rem;}}
