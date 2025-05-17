@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript-Projects</title>
+    <title>JavaScript Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        nav ul li a, footer p, footer a {
+            position: relative;
         }
-
-        html,
-        body {
-            height: 100%;
+        nav ul li a::after, footer p::after, footer a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background-color: #F472B6;
+            transition: width 0.3s ease-in-out;
+        }
+        nav ul li a:hover::after, footer p:hover::after, footer a:hover::after {
             width: 100%;
-            background-color: #FCD900;
         }
-
-        .navbar {
-            width: 100vw;
-            height: 15vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            background-color: #001E6C;
-            color: white;
+        body {
+            background: linear-gradient(to bottom right, #FBBF24, #FEF3C7);
         }
-
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 20px;
-        }
-
-        main {
-            height: calc(100vh-(10vh+15vh));
-        }
-
-        .button a {
-            width: 40vmin;
-            height: 40vmin;
-        }
-
-        .foot {
-            width: 100vw;
-            height: 10vh;
-            background-color: #035397;
-            color: black;
+        header, footer {
+            background: linear-gradient(to right, #1E1B4B, #312E81);
         }
     </style>
 </head>
-
-<body>
-    <header>
-        <div class="navbar">
-            <h1>Javascript-Projects</h1>
-        </div>
+<body class="min-h-screen flex flex-col">
+    <header class="fixed top-0 w-full z-10 bg-opacity-80 backdrop-blur-md text-white">
+        <nav class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold uppercase">JavaScript Projects</h1>
+            </div>
+            <button id="hamburger" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <ul id="nav-links" class="hidden md:flex md:space-x-6">
+                <li><a href="currency convertor/index.html" class="uppercase font-semibold">Currency Converter</a></li>
+                <li><a href="calculator/index.html" class="uppercase font-semibold">Calculator</a></li>
+                <li><a href="Text to Speech/index.html" class="uppercase font-semibold">Text-to-Speech</a></li>
+                <li><a href="digital clock/" class="uppercase font-semibold">Digital Clock</a></li>
+                <li><a href="QR code genrator/index.html" class="uppercase font-semibold">QR Code Generator</a></li>
+                <li><a href="CosmicLens/index.html" class="uppercase font-semibold">CosmicLens</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="container">
-            <button><a href="currency convertor/index.html">currency convertor</a></button>
-            <button><a href="calculator/index.html">calculator</a></button>
-            <button><a href="Text to Speech/index.html">Text-to-Speech</a></button>
-            <button><a href="digital clock/">digital clock</a></button>
-            <button><a href="QR code genrator/index.html">QRCode Generator</a></button>
+    <main class="flex-grow flex items-center justify-center mt-16">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+            <a href="currency convertor/index.html" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/1E293B/currency-exchange.png" alt="Currency Converter" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">Currency Converter</span>
+            </a>
+            <a href="calculator/index.html" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/1E293B/calculator.png" alt="Calculator" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">Calculator</span>
+            </a>
+            <a href="Text to Speech/index.html" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/1E293B/microphone.png" alt="Text-to-Speech" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">Text-to-Speech</span>
+            </a>
+            <a href="digital clock/" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/1E293B/clock.png" alt="Digital Clock" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">Digital Clock</span>
+            </a>
+            <a href="QR code genrator/index.html" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/1E293B/qr-code.png" alt="QR Code Generator" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">QR Code Generator</span>
+            </a>
+            <a href="CosmicLens/index.html" class="flex flex-col items-center bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform">
+                <img src="https://img.icons8.com/ios-filled/50/000000/planet.png" alt="CosmicLens" class="w-16 h-16 mb-2">
+                <span class="text-lg font-semibold text-slate-800 text-center">CosmicLens</span>
+            </a>
         </div>
     </main>
-    <footer>
-        <div class="foot">
-
+    <footer class="bg-opacity-80 backdrop-blur-md text-white text-center py-4">
+        <p class="font-bold inline-block">Made by Pranav</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="https://github.com/PranavHendre02" target="_blank" class="flex items-center">
+                <img src="https://img.icons8.com/ios-filled/24/FFFFFF/github.png" alt="GitHub" class="w-6 h-6 mr-1">
+                <span class="font-semibold">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/pranav-hendre-b07339316/" target="_blank" class="flex items-center">
+                <img src="https://img.icons8.com/ios-filled/24/FFFFFF/linkedin.png" alt="LinkedIn" class="w-6 h-6 mr-1">
+                <span class="font-semibold">LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/pranavhendre02/" target="_blank" class="flex items-center">
+                <img src="https://img.icons8.com/ios-filled/24/FFFFFF/instagram-new.png" alt="Instagram" class="w-6 h-6 mr-1">
+                <span class="font-semibold">Instagram</span>
+            </a>
         </div>
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('w-full');
+            navLinks.classList.toggle('bg-indigo-950');
+            navLinks.classList.toggle('p-4');
+        });
+    </script>
 </body>
-
 </html>
